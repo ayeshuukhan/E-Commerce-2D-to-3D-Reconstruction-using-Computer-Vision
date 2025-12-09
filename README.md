@@ -1,7 +1,5 @@
 This project converts **2D images into 3D point clouds** using deep learning. The goal is to take an image of a product and predict its 3D structure.
 
----
-
 ## Project Summary
 
 This project uses:
@@ -10,8 +8,6 @@ This project uses:
 * **MLP (Multi-Layer Perceptron)** to convert those features into a **3D point cloud**.
 * **Chamfer Distance** as the loss function to compare predicted point clouds with real point clouds.
 * **Amazon-Berkeley Objects Dataset** containing multi-view images and 3D point clouds.
-
----
 
 ## Dataset Used
 
@@ -22,8 +18,6 @@ The dataset contains:
 * A folder with 3D point cloud files (`.ply`)
 
 Each image has a matching 3D point cloud.
-
----
 
 ## How the Model Works
 
@@ -44,8 +38,6 @@ Each image has a matching 3D point cloud.
 * Used to measure how close the predicted point cloud is to the real one.
 * The smaller the loss → the better the 3D reconstruction.
 
----
-
 ## Training
 
 * The model is trained for **20 epochs**.
@@ -62,7 +54,6 @@ The final output of the model is:
 * A **predicted 3D point cloud** (shape of the object)
 * You can visualize it using PyTorch3D or any 3D viewer
 
----
 
 ## What Is a Point Cloud?
 
@@ -77,7 +68,6 @@ z coordinate
 
 Together, these points create the **3D shape** of the object.
 
----
 
 ## What Is an MLP?
 
@@ -93,7 +83,6 @@ In this project:
 VGG Features → MLP → 3D Point Cloud
 ```
 
----
 
 ## Libraries Used
 
@@ -104,12 +93,9 @@ VGG Features → MLP → 3D Point Cloud
 * Scikit-Learn
 * Open3D
 
----
 
 ## Notes
 
 * This project shows how 2D images can be turned into 3D structures.
 * It combines **CNN features** and **MLP prediction**.
 * It is simple, clean, and easy to extend with NeRF or more advanced methods.
-
----
